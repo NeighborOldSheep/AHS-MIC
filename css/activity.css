@@ -1,0 +1,72 @@
+/* Activity CSS Style */
+
+/* ----------Content---------- */
+body{
+    background: #eee;
+}
+
+
+/* title */
+.content .title{
+    width: 1090px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content .title h2{
+    font-size: 35px;
+}
+
+/* info */
+.content .info{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.content .box{
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 300px;
+    height: 500px;
+    text-align: center;
+    background: rgb(255,255,255);
+    transition: all .2s;
+    
+}
+
+.content .box:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 0 5px .5px rgba(0,0,0,.3);
+}
+
+.content .box img{
+    width: 250px;
+    height: 250px;
+    margin: 20px 0;
+}
+
+.content .box .text{
+    width: 300px;
+}
+
+.content .box .text .name{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.content .box .text li{
+    margin-bottom: 5px;
+
+}
+
+.content .box .text li strong{
+    font-size: 16px;
+}
+
+.content .box .text li:nth-child(4) strong{
+    padding-left: 30px;
+}
+
+.content .box .text li:nth-child(4) span{
+    text-align: center;
+}

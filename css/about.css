@@ -1,0 +1,21 @@
+/* About us CSS Style */
+
+/* title */
+.content .title{
+    width: 1090px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.content .title h2{
+    font-size: 35px;
+}
+
+/* info */
+.content .info{
+    margin-top: 30px;
+}
+
+/* .content .info img{
+    width: 500px;
+} */
