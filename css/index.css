@@ -62,6 +62,10 @@ footer .top .title{
 }
 
 /* recruit */
+.content .recruit{
+    padding-bottom: 40px;
+}
+
 .content .recruit .info{
     width: 600px;
     margin: 0 auto;

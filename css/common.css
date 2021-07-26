@@ -1,5 +1,67 @@
 /* Common CSS */
 
+/* mobile web page font size     */
+@media only screen and (max-width:768px),only screen and (max-device-width:768px) {
+    body,html {
+        font-size: 104px;
+    }
+}
+@media only screen and (max-width:750px),only screen and (max-device-width:750px) {
+    body,html {
+        font-size: 100px;
+    }
+}
+@media only screen and (max-width:640px),only screen and (max-device-width:640px) {
+    body,html {
+        font-size: 85.33px;
+    }
+}
+@media only screen and (max-width:600px),only screen and (max-device-width:600px) {
+    body,html {
+        font-size: 80px;
+    }
+}
+@media only screen and (max-width:540px),only screen and (max-device-width:540px) {
+    body,html {
+        font-size: 72px;
+    }
+}
+@media only screen and (max-width:480px),only screen and (max-device-width:480px) {
+    body,html {
+        font-size: 64px;
+    }
+}
+@media only screen and (max-width:414px),only screen and (max-device-width:414px) {
+    body,html {
+        font-size: 55.2px;
+    }
+}
+@media only screen and (max-width:412px),only screen and (max-device-width:412px) {
+    body,html {
+        font-size: 54.8px;
+    }
+}
+@media only screen and (max-width:400px),only screen and (max-device-width:400px) {
+    body,html {
+        font-size: 53.33px;
+    }
+}
+@media only screen and (max-width:375px),only screen and (max-device-width:375px) {
+    body,html {
+        font-size: 50px;
+    }
+}
+@media only screen and (max-width:360px),only screen and (max-device-width:360px) {
+    body,html {
+        font-size: 47.8px;
+    }
+}
+@media only screen and (max-width:320px),only screen and (max-device-width:320px) {
+    body,html {
+        font-size: 42.4px;
+    }
+}
+
 /* default style clean */
 *{
     margin: 0;
@@ -90,7 +152,7 @@ img{
 
 /* -----------Footer---------- */
 footer{
-    height: 700px;
+    height: 300px;
     margin-top: 20px;
     text-align: center;
 }

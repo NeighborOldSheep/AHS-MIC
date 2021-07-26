@@ -50,3 +50,64 @@ body{
     font-size: 18px;
     margin-top: 10px;
 }
+
+/* message board */
+.content .message{
+    text-align: center;
+    margin-top: 150px;
+}
+
+/* board */
+.content .message .message_box{
+    width: 800px;
+    height: 400px;
+    background: #fff;
+    margin: 30px 0 10px 150px;
+    /* 开启BFC避免外边距重叠 */
+    overflow: hidden;
+}
+
+/* type bar */
+.content .message .enter{
+    width: 800px;
+    margin: 0 auto;
+}
+
+.content .message .enter input{
+    width: 650px;
+    height: 30px;
+    outline: 0;
+    border: 1px solid rgb(224,224,224);
+    padding: 0 10px;
+}
+
+.content .message .enter input:focus{
+    border-color: rgb(52,152,219);
+}
+
+.content .message .enter button{
+    width: 100px;
+    height: 30px;
+    background: rgb(52,152,219);
+    outline: 0;
+    border: 1px solid rgb(224,224,224);
+}
+
+.content .message .enter button:active{
+    border-color: rgb(0,0,0);
+}
+
+
+/* message board info */
+.message .time{
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.message .message_cotent{
+    text-align: left;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
