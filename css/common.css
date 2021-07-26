@@ -114,6 +114,10 @@ img{
     line-height: 80px;
 }
 
+.header-wrapper .logo a{
+    color: #b0b0b0;
+}
+
 /* nav */
 .header-wrapper .nav{
     float: right;
