@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-sitemap:https://ahs-mic.github.io/sitemap.xml
+sitemap:https://neighboroldsheep.github.io/AHS-MIC/sitemap.xml
