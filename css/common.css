@@ -1,7 +1,7 @@
 /* Common CSS */
 
 /* mobile web page font size     */
-@media only screen and (max-width:768px),only screen and (max-device-width:768px) {
+/* @media only screen and (max-width:768px),only screen and (max-device-width:768px) {
     body,html {
         font-size: 104px;
     }
@@ -60,7 +60,7 @@
     body,html {
         font-size: 42.4px;
     }
-}
+} */
 
 /* default style clean */
 *{
@@ -68,6 +68,10 @@
     padding: 0;
     list-style: none;
     text-decoration: none;
+}
+
+html{
+    font-size: 5.33333333vw;
 }
 
 body{
