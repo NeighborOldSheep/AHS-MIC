@@ -1,30 +1,25 @@
 /* fixed header add transition animation */
 
-/* 
-    parament:
-        1. obj  object name
-        2. ev   event name
-        3. fn   return function
-*/ 
-function addEvent(obj,ev,fn){
-    /* normal browser */
-    if(obj.addEventListener){
-        obj.addEventListener(ev,fn);
+var header = document.getElementById("header");
+//获取导航栏到父元素的顶部距离
+var headerbarTop = header.offsetTop;
+
+window.onscroll = function(){
+    var scrollTop = document.documentElement.scrollTop || window.pageYOffset || document.body.scrollTop;
+
+    //滚动高度 > 元素距离的位置时添加类，否则移除类
+    if(scrollTop > headerbarTop){
+        header.classList.add('fixed');
     }
-    /* IE browser */
     else{
-        obj.attachEvent("on" + ev, fn);
-    }
-
-}
-
-
-function fixNav(){
-    var header = document.getElementById("header");
-
-    if(window.pageYOffset > header.offsetTop){
-        header.className += " fixed";
+        header.classList.remove("fixed");
     }
 }
 
-addEvent(window,"scroll",fixNav);
+
+const menuBtn = document.querySelector(".menu-btn");
+const nav = document.querySelector(".nav");
+
+menuBtn.addEventListener("click", ()=>{
+    nav.classList.toggle("mobile-menu");
+})
