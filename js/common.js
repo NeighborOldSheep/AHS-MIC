@@ -27,28 +27,30 @@ menuBtn.addEventListener("click", () => {
 
 
 
-window.onload = function () {
-    //mobile device remove class center
-    function removeClass(number) {
-        var middle = document.querySelectorAll(".center");
 
-        if (number.matches) {
-            console.log("您的屏幕小于900px");
-            //遍历所有带有center class的元素
-            for (var i = 0; i < middle.length; i++) {
-                //循环删除带有center class
-                middle[i].classList.remove("center");
-            }
+//mobile device remove class center
+function removeClass(number) {
+    var middle = document.querySelectorAll(".center");
+
+    if (number.matches) {
+        console.log("您的屏幕小于900px");
+        //遍历所有带有center class的元素
+        for (var i = 0; i < middle.length; i++) {
+            //循环删除带有center class
+            middle[i].classList.remove("center");
         }
-        else {
-            for (var i = 0; i < middle.length; i++) {
-                middle[i].classList.add("center");
-            }
+    }
+    else {
+        for (var i = 0; i < middle.length; i++) {
+            middle[i].classList.add("center");
         }
-    };
+    }
+};
 
 
-    var mq = window.matchMedia("(max-width: 900px)");
+var mq = window.matchMedia("(max-width: 900px)");
+removeClass(mq);
+mq.addEventListener("resize", function () { 
     removeClass(mq);
-    mq.addEventListener(removeClass, function () { })
-}
+})
+
