@@ -14,14 +14,15 @@
 
 .banner-wrapper .img{
     width: 100%;
-    padding-bottom: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     position: relative;
 }
 
 .banner-wrapper .img img{
     width: 100%;
     height: 100%;
-    position: absolute;
 }
 
 .banner-wrapper .text{
@@ -49,6 +50,9 @@
 .content{
     margin-top: 20px;
     background: rgb(248,248,248);
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* introduce */
@@ -71,11 +75,19 @@ footer .top .title{
     margin-top: 10px;
 }
 
+.content .introduce .info{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
 .content .introduce .info img{
     margin-top: 30px;
-    width: 500px;
-    height: 500px;
-    margin-left: 30%;
+
+    /* margin-left: 30%; */
+
 }
 
 /* recruit */
@@ -84,22 +96,21 @@ footer .top .title{
 }
 
 .content .recruit .info{
-    width: 600px;
-    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .content .recruit .info .left{
-    float: left;
+    margin: auto 5vw;
 }
 
-.content .recruit .info .right{
-    float: right;
-    margin-top: 20px;
-    margin-right: 160px;
+.content .recruit .position li{
+    margin: 4vh auto;
 }
 
-.content .recruit .info .right li{
-    margin-top: 10px;
+.content .recruit .position li .name{
+    font-size: 2vmin;
 }
 
 /* New Year CountDown */
@@ -142,3 +153,21 @@ footer .top .title{
     font-size: 1.3rem;
 }
 
+/* music */
+.music{
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    
+}
+
+.music .title{
+    margin-bottom: 20px;
+}
+
+.music .text{
+    margin-top: 10px;
+}

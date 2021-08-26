@@ -29,7 +29,7 @@ menuBtn.addEventListener("click", () => {
 
 
 //mobile device remove class center
-function removeClass(number) {
+/* function removeClass(number) {
     var middle = document.querySelectorAll(".center");
 
     if (number.matches) {
@@ -54,3 +54,4 @@ mq.addEventListener("resize", function () {
     removeClass(mq);
 })
 
+ */
