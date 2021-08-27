@@ -21,7 +21,7 @@
 
 /* profile */
 .content .profile{
-    width: 80%;
+    width: 100%;
     margin-top: 6vh;
     display: flex;
     justify-content: center;
@@ -34,24 +34,17 @@
     justify-content: center;
     align-items: center;
     margin-top: 50px;
+    /* text-align: center; */
 }
 
 .content .profile .img{
-    width: 200px;
-    /* margin-left: 290px; */
-    display: center;
+    width: 25%;
+    display: flex;
     justify-content: space-around;
-}
-
-.content .profile .img img{
-    width: 200px;
-    height: 200px;
 }
 
 .content .profile .description{
-    width: 500px;
-    display: center;
-    justify-content: space-around;
+    width: 50%;
 }
 
 .content .profile .description .name{
@@ -63,4 +56,82 @@
 .content .profile .description .position{
     border-bottom: 5px solid #e8e8e8;
     margin-bottom: 5px;
+}
+
+/* load more */
+.content .load{
+    padding:0 15px;
+	width:220px;
+	height:50px;
+	background-color:#B8860B;
+	color:#fff;
+	line-height:50px;
+	text-align:center;
+	border-radius:5px;
+	margin:20px auto;
+	border:0 none;
+	font-size:16px;
+    margin-top: 15vh;
+    display: block;
+}
+
+/* previous year leadership */
+.content .prev-leader .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.content .prev-leader .title h3{
+    margin-top: 1vh;
+}
+
+.content .prev-leader{
+    /* 通过js动态设置显示或者不显示 */
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Put away button */
+.content .prev-leader .back{
+    display: none;
+    padding:0 15px;
+	width:220px;
+	height:50px;
+	background-color:#B8860B;
+	color:#fff;
+	line-height:50px;
+	text-align:center;
+	border-radius:5px;
+	margin:20px auto;
+	border:0 none;
+	font-size:16px;
+    margin-top: 15vh;
+}
+
+ /* psy */
+.content .prev-leader .psy{
+    margin-right: 2vw;
+} 
+
+/* mobile device */
+@Media screen and (max-width: 900px){
+    .content .profile li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .content .profile li .img{
+        margin-bottom: 20px;
+    }
+
+    .content .profile li .description{
+        padding-left: 10vw;
+    }
 }
