@@ -34,7 +34,7 @@
 
 .banner-wrapper .text h2{
     font-size: 56px;
-    margin-left: 5.5vw;
+    margin-left: .5vw;
     font-size: 6vmin;
 }
 
@@ -85,7 +85,7 @@ footer .top .title{
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .content .introduce .info img{
@@ -106,10 +106,7 @@ footer .top .title{
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.content .recruit .info .left{
-    margin: auto 5vw;
+    flex-direction: column
 }
 
 .content .recruit .position{
@@ -121,10 +118,6 @@ footer .top .title{
     text-align: center;
 }
 
-.content .recruit .position .img{
-    margin-left: -6.5vw;
-}
-
 .content .recruit .position li .name{
     font-size: 18px;
 }
@@ -133,6 +126,10 @@ footer .top .title{
     font-size: 14px;
 }
 
+/* .content .recruit .info .img{
+    margin-left: -5vw;
+}
+ */
 /* New Year CountDown */
 .countdown{
     margin-top: 30px;
