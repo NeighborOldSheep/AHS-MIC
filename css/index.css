@@ -88,11 +88,22 @@ footer .top .title{
     flex-direction: column;
 }
 
+
+
 .content .introduce .info img{
     margin-top: 30px;
+    width: 800px;
+    height: 600px;
 
     /* margin-left: 30%; */
+}
 
+@media screen and (max-width: 960px){
+    .content .introduce .info img{
+        margin-top: 30px;
+        width: 80vw;
+        height: 60vh;
+    }
 }
 
 /* recruit */
